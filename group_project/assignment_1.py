@@ -1,5 +1,9 @@
 def first_half(a_string):
-    pass
+    if len(a_string)%2 == 0:
+        half = int(len(a_string) /
+    else:
+        half = int(len(a_string) / 2) + 1
+    return a_string[:half]
 
 
 def test_first_half_with_even_length_string():
